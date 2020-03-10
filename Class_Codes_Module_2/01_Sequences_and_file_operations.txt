@@ -1,0 +1,7 @@
+Topics Covered:
+-> Reading Keyboard input in python
+-> File input/output Operation in Python
+-> Opening, Closing, Reading, Writing, Deleting and Renaming Files in Python
+-> File Objects in Python
+-> Types of Sequences in Python: Lists, Tuples, Strings, Sets, Dictionaries
+-> Sequence Operations in Python

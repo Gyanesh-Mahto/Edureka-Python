@@ -1,0 +1,37 @@
+Open Function: You can open files using Python's built-in open() function
+
+Syntax:
+file_Object=open(file_name,[access_model])
+
+Here are the parameter details:
+file_name:The file_name argument is a string value that contains the name of the file that
+you want to access.
+access_model: The access_model determines the mode in which the file has to be opened, i.e
+read, write, append
+
+Open function - Access Modes:
+Modes------------------------------------------------>Description
+r----------------------------------> This is the default mode. Opens a file for reading only
+rb---------------------------------> Opens a file for reading only in binary format
+r+---------------------------------> Opens a file for both reading and writing
+rb+--------------------------------> Opens a file for both reading and writing in binary format
+w----------------------------------> Opens a file for writing only. Overwrites the file if the file exits
+                                     If the file does not exist, creates a new file for writing.
+wb---------------------------------> Opens a file for writing only in binary format. Overwrites the file if the file exits
+                                     If the file does not exist, creates a new file for writing.
+a----------------------------------> Opens a file for appending
+ab---------------------------------> Opens a file for appending in binary format
+a+---------------------------------> Opens a file for both appending and reading
+ab+--------------------------------> Opens a file for both appending and reading in binary format
+w+---------------------------------> Opens a file for both writing and reading 
+wb+--------------------------------> Opens a file for both writing and reading in binary format
+
+
+Writing files function:
+Syntax:
+fileObject.write(string)
+
+-The write() method does not add a new line character('\n') to the end of the string.
+-The write() method writes content in an open file. Python strings can have binary data and not
+    just text.
+
