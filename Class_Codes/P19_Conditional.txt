@@ -1,0 +1,6 @@
+Conditional Statements: Conditional Statements are used to execute a statement or a group of statements when some condition is true
+
+Types of Conditional Statements:
+1. if
+2. elif
+3. else

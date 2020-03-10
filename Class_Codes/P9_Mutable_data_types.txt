@@ -1,0 +1,24 @@
+
+****Difference between immutable vs mutable data types:
+Immutable                                                   Mutable:
+->Specific value can't be changed                       ->Specific value of data types can be changed
+->If Data type values are updated, old variable is      ->If Data type values are updated then there is no change in address. Same
+thrown and new variable is allocated to variable              variable will get updated with new values.
+
+MUTABLE DATA TYPES:
+1. Lists 
+2. Sets
+3. Dictionaries
+
+1. Lists: List is an ordered set of elements enclosed within square brackets. The main differences between Lists and Tuples are:
+->Lists are enclosed in brackets[] and Tuples are enclosed within paranthesis()
+->Lists are Mutable and Tuples are immutable
+->Tuples are faster than Lists.
+
+2. Sets: Set is an ordered and sorted set of elements enclosed within curly brackets which holds unique items.
+The main differences between Lists and Sets are:
+->
+->
+
+3. Dictionaries: Dictionaries contain key value pairs. Each key is separated from its value by a colon(:), the items are
+separated by comma, and th whole thing is enclosed within curly braces.

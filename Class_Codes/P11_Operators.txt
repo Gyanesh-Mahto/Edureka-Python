@@ -1,0 +1,23 @@
+Operators:
+Operators are the constructs which can manipulate the values of the Operands. Consider the expression 2 + 3=5,
+here 2 and 3 are Operands and + is called Operator.
+
+Types of Operators:
+--------------------
+1. Arithmetic
+2. Assignment
+3. Comparison
+4. Logical
+5. Bitwise
+6. Identity
+7. Membership
+
+1. Arithmetic:
+---------------
+Addition:       a+b
+Subtraction:    a-b
+Multiplication: a*b
+Division:       a/b
+Modulus:        a%b
+Exponent:       a**b
+Floor Division: a//b

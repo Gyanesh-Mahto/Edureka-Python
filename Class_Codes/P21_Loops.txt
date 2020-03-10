@@ -1,0 +1,7 @@
+Loop: A loop statement allows us to execute a statement or a group of statement multiple times
+
+Types of Loops:
+1. While
+2. For
+3. Nested
+
