@@ -1,0 +1,24 @@
+What are sequences?
+->Sequences are containers with items that are accessible by indexing or slicing. The built-in
+len() function takes any container as an argument and returns the number of items in the 
+container.
+
+-->Concatination: The sequences will be added in concatination with + operator.
+syntax: sequence_1 + sequence_2
+
+-->Membership testing: in, not in, To check whether particular element is part of sequence or not
+
+-->Indexing: To get index of particular element in a sequence.
+syntax: sequence[index]
+
+-->Slicing: To get slice out of a sequence.
+Syntax: sequence[start, stop-1]
+
+-------------------------------------------------------------------------------------------
+-->Types of sequences in Python:
+---------------------------------
+1. Lists
+2. Tuples
+3. Strings
+4. Sets
+5. Dictionaries
