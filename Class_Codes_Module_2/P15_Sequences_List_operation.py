@@ -10,6 +10,7 @@ On this list we can do all sequence operation:
 ->Membership Testing
 ->Indexing
 ->Slicing
+->Repitition
 '''
 print(list1)    #Prints entire list
 #O/P:
@@ -35,7 +36,7 @@ print(list1[::2])   #Print element from 0 to n with the stepping of 2
 #O/P:
 #['abc', 'ghi', 'mno']
 
-print(list1*2)      #Repition of list
+print(list1*2)      #Repitition of list
 #O/P:
 #['abc', 'def', 'ghi', 'jkl', 'mno', 'abc', 'def', 'ghi', 'jkl', 'mno']
 
