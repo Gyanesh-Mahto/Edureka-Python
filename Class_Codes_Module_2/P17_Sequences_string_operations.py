@@ -12,6 +12,12 @@ Following operations can be performed on string:
 -> Repitition: string_1*2
 -> Membership: in, not in
 -> Reverse: string[::-1]
+
+Strings can be represented within:
+''<---------Single inverted commas
+""<---------Double inverted commas
+''' '''<----Triple Single inverted commas
+""" """<----Triple Double inverted commas
 '''
 
 str1='Welcome'
@@ -24,6 +30,15 @@ print(str2)
 #to
 print(str3)
 #Edureka
+
+print(str3[1:5])    #Slicing
+#dure
+
+print(str1+str2+str3)   #Concatination
+#WelcometoEdureka
+
+print(str1+' '+str2+' '+str3)   #Concatination
+#Welcome to Edureka
 
 string="Python"
 print(string)
@@ -56,8 +71,38 @@ print(dir(str1))
 '''
 
 str1='edureka'
-print(str1.capitalize())
+print(str1.capitalize())    #Capitalize first letter in a string
 #Edureka
+
+print(str2)
+#to
+
+print(str2.capitalize())
+#To
+
+str4="heLLo"
+print(str4.islower())   #Checking wether all letters in that string is lower or not
+#False
+print(str4.isupper())
+#False
+print(str4.upper())
+#HELLO
+print(str4.lower())
+#hello
+print(str4.startswith('H'))
+#False
+print(str4.startswith('h'))
+#True
+
+print(str1.join(str4))  #join(): every character of str4 is followed by str1 string
+#hedurekaeedurekaLedurekaLedurekao
+'''
+Here in join(), every character of str4 is followed by str1 string.
+'''
+print(' '.join(str4))
+#h e L L o
+print('$'.join(str4))
+#h$e$L$L$o
 
 print(str1.count("ka"),0,len(str1))
 #1 0 7  (1: No. of times "ka" present in string, 0: Begin, 7: len(str1))
