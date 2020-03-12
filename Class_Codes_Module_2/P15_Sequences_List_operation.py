@@ -2,7 +2,8 @@
 Lists: List is the most versatile datatype available in Python, which can be written as a list
 of comma-separated values(items) between square brackets.
 
-Lists are mutable in nature
+List are mutable in nature.
+
 '''
 list1=['abc','def','ghi','jkl','mno']
 '''
@@ -150,3 +151,15 @@ print(len(list2))   #Length of list inside a Tuple.
 #2
 print(list2[1][0:1])    #Printing 0st element from 1st tuple.
 #('Hello',)
+
+print(list1)
+#['abc', 'def', 'Pranam', 'N', 'a', 'm', 'a', 's', 't', 'e', 'Hello']
+
+print(sorted(list1))    #Sorting elements in ASCII order
+#['Hello', 'N', 'Pranam', 'a', 'a', 'abc', 'def', 'e', 'm', 's', 't']
+
+print(list(reversed(list1)))    #Reversed the list
+#['Hello', 'e', 't', 's', 'a', 'm', 'a', 'N', 'Pranam', 'def', 'abc']
+
+print(list1[::-1])  #Reversing the list
+#['Hello', 'e', 't', 's', 'a', 'm', 'a', 'N', 'Pranam', 'def', 'abc']
