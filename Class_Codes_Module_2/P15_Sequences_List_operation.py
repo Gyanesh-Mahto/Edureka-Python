@@ -2,6 +2,7 @@
 Lists: List is the most versatile datatype available in Python, which can be written as a list
 of comma-separated values(items) between square brackets.
 
+Lists are mutable in nature
 '''
 list1=['abc','def','ghi','jkl','mno']
 '''
