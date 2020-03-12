@@ -116,3 +116,76 @@ It is tuple since only count and index are present:
 '''
 
 print(dir(list_inside_tuple[0]))
+'''
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', 
+'__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', 
+'__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', 
+'__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
+'__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', 
+'__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 
+'remove', 'reverse', 'sort']
+
+But the element inside list_inside_tuple is list as we can see from the attributes of elements.
+'''
+print(type(list_inside_tuple[0]))   #Printing the type of item inside list_inside_tuple object
+#<class 'list'>
+'''
+So, the property of both mutability from list and immutability from tuple are always applicable
+to individual items. So, element inside list_inside_tuple is a mutable object, Since, it is a list.
+'''
+print(list_inside_tuple[0])
+#[1, 2, 3]
+print(list_inside_tuple[0][1])  #To access 2nd element inside 1st list inside list_inside_tuple object
+#2
+list_inside_tuple[0][1]=100     #Changing the value of 2nd element inside 1st list
+print(list_inside_tuple[0])     #Above change is applicable since list is mutable.
+#[1, 100, 3]
+'''
+We can make changes to the list items inside list_inside_tuple object, Since, list is mutable.
+but we can't make changes to tuple items, Since it is immutable data type. 
+This can be shown as follows:
+'''
+#list_inside_tuple[0]=900
+#print(list_inside_tuple)
+#O/P:
+#TypeError: 'tuple' object does not support item assignment
+
+###########################################################################################
+
+'''
+Converting Tuples into lists:
+'''
+tuple1=(1,2,3,'a','b','c')
+list1=list(tuple1)
+print(list1)
+#O/P:
+#[1, 2, 3, 'a', 'b', 'c']
+'''
+So, after typecasting tuple element with list, list object has tuple values
+'''
+list1[1]="Hello"
+print(list1)
+#[1, 'Hello', 3, 'a', 'b', 'c']
+tuple1=tuple(list1)
+print(tuple1)
+#(1, 'Hello', 3, 'a', 'b', 'c')
+'''
+Here, we are converting tuple into a list, updating contents of the list and again converting the
+list into tuple.
+'''
+############################################################################################
+
+print(tuple_inside_list)    #Basically it is a list which contains tuple elements
+#[(1, 2, 3), (4, 5, 6), ('Hello', 'Bye')]
+print(type(tuple_inside_list))
+#<class 'list'>
+tuple_inside_list.append(('q','w','e','r','t','y'))     #Appending tuple items in a list
+print(tuple_inside_list)
+#[(1, 2, 3), (4, 5, 6), ('Hello', 'Bye'), ('q', 'w', 'e', 'r', 't', 'y')]
+print(tuple_inside_list[0])     #Printing 1st element of list
+#(1, 2, 3)
+print(type(tuple_inside_list[0]))   #1st element is tuple
+#<class 'tuple'>
+'''
+tuple is immutable, so, inside tuple, elements can't eb changed
+'''
