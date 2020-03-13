@@ -30,3 +30,17 @@ print(my_list)
 my_list_c=[n*n for n in nums]
 print(my_list_c)
 #O/P: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+#3. Print n only if it is even from nums list
+#For Loop
+my_list=[]
+for n in nums:
+    if n%2==0:
+        my_list.append(n)
+print(my_list)
+#O/P: [2, 4, 6, 8, 10]
+
+#List Comprehension:
+my_list=[n for n in nums if n%2==0]
+print(my_list)
+#O/P: [2, 4, 6, 8, 10]
