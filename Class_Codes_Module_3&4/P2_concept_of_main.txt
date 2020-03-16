@@ -1,0 +1,65 @@
+
+Python is said to be very secured language because it is not very easy to hack python websites or
+python application because when any python file is created or python object, then various inbuilt 
+attributes are created by python for that particular python object and files.
+Various inbuilt attributes can be checked with dir().
+
+In that __init__ plays a very important role. whenever function is called, then __init__ block 
+will get executed for each and every function. When anything like list is also declared, 
+then also, the __init__ function of the list is getting executed.
+
+If any set is also declared, then also, the __init__ function of the set will get executed.
+
+Similarly for any python file, inbuilt attribute __name__ attribute is executed for that particular
+file.
+
+Above can be understood with this example:
+
+#File one.py
+def fun():
+    print("fun() in one.py")
+
+print("top level in one.py")
+
+if __name__=="__main__":
+    print("one.py is being run directly")
+else:
+    print("one.py is being imported in other module")
+
+'''
+O/P:
+top level in one.py
+one.py is being run directly
+'''
+'''
+Explanation: Here fun() is decalred but not called. So, "top level in one.py is printed" and as
+nothing is imported, so, __name__ attribute has same name as of __main__which is "P2_one".
+So, "one.py is being run directly is printed".
+'''
+
+#File two.py
+
+import P2_one
+
+print("top level in two.py")
+P2_one.fun()
+if __name__=="__main__":
+    print("two.py is being run directly")
+else:
+    print("two.py is being imported in other module")
+
+'''
+O/P:
+top level in one.py
+one.py is being imported in other module
+top level in two.py
+fun() in one.py
+two.py is being run directly
+'''
+'''
+Explanation: Here P2_one file is imported. So, print statement of P2_one is executed which are:
+"top level in one.py" and "one.py is being imported in other module" and after that
+top level in two.py" is printed. And after that fun() is printed which is declared in P2_one.py
+ and "top level in two.py is printed" because, __name__ attribute has same name as of __main__
+ which is "P2_two".
+'''

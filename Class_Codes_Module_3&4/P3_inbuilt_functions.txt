@@ -1,0 +1,28 @@
+-->Built-in Functions:
+-----------------------
+Built-in Functions are the functions which are built into(already available) Python and can be
+accessed by end-users:
+
+Sorted() -  Returns a new sorted list from the items in iterable.           
+any() -     The any() function is the converse of the all() function.              
+bool() -    The bool function coverts the value to boolean.           
+chr() -     Returns the string representing a character whose Unicode code point is the integer.                   
+open() -    Opens file and returns a corresponding file object.                 
+abs() -     The abs() function returns the absolute value of an integer,floating point,or complex num.
+globals() - Returns a dictionary representing the current global symbol table.
+enumerate()-Returns an enumerate object with items and their index values.
+int() - Returns an integer object constructed from a number or string x
+len() - Returns the length of an object.
+all() - The all() function returns true if all the elements of the supplied iterable are True.
+bin() - Converts an integer number to a binary string prefixed with "0b"
+eval() - The arguments are a string and optional globals and locals. If provided, globals
+must be a dictionary. If provided, locals can be any mapping object.
+sum() - sum(iterable) sums the numeric values in an iterable such as a list, tuple, or set.
+reversed() - reversed(seq) is a reverse iterator on an object of the type that you can loop
+through and process. The list and tuple are supported with this function.
+
+-->Important Built-in Functions:
+--------------------------------
+enumerate():
+-Return an enumerate object. The iterable must be a sequence, an iterator, or some other object
+which supports iteration.

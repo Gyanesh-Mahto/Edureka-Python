@@ -1,0 +1,155 @@
+Topics to be covered:
+---------------------
+===>Function Topics:
+-------------------
+-> Need of Function
+-> Introduction to Functions in Python
+-> Return Statement
+-> Concept of __name__="_main_"
+-> Built-in Functions
+-> Lambda Functions
+-> Variable Scope
+-> Function Arguments
+
+===>OOPs Topics:
+-> Procedure Oriented Programming v/s Object Oriented Programming
+-> Class and its Attributes
+-> Private Methods
+-> Constructors and Destructors
+-> Object Oriented Programming Concepts
+-> Abstraction
+-> Encapsulation
+-> Inheritance and its types
+-> Method Overriding
+-> Polymorphism
+-> Getter and Setter Methods
+
+Functions:
+->Need of Functions:
+Why do we need functions?
+-> When we have some activity which we have to do repeatedly, Then in this scenario, we write
+functions and call that function again and again.
+
+-->Function Definition and Function Call:
+----------------------------------------
+->Function Definition: The set of statements written once executed multiple times.
+->def is the keyword for defining the function.
+->Function Call: Once we define the Function, we can call it multiple times.
+NOTE: We can pass same number of arguments in function call which is defined in function call.
+Example:
+def print_name(str):        #Function Definition
+    print("Wecome to Edureka, ", str)
+    return()
+
+str=input("Please enter your name:")
+print_name(str)         #Function Call
+
+-->Return statement:
+---------------------
+Why use the return statement?
+The return statement terminates the execution of a function and return control to the calling function
+
+#Python is said to be very secured language because it is not very easy to hack python websites or
+python application because when any python file is created or python object, then various inbuilt 
+attributes are created by python for that particular python object and files. In that __init__ plays
+a very important role. whenever function is called, then __init__ block will get executed for each and every
+function. When anything like list is also declared, then also, the __init__ function of the list is
+getting executed. If any set is also declared, then also, the __init__ function of the set will
+get executed. Similarly for any python file, inbuilt attribute __name__ attribute is executed for that particular
+file.
+
+-->Concept of __name__="__main__":
+
+Python is said to be very secured language because it is not very easy to hack python websites or
+python application because when any python file is created or python object, then various inbuilt 
+attributes are created by python for that particular python object and files.
+Various inbuilt attributes can be checked with dir().
+
+In that __init__ plays a very important role. whenever function is called, then __init__ block 
+will get executed for each and every function. When anything like list is also declared, 
+then also, the __init__ function of the list is getting executed.
+
+If any set is also declared, then also, the __init__ function of the set will get executed.
+
+Similarly for any python file, inbuilt attribute __name__ attribute is executed for that particular
+file.
+
+Above can be understood with this example:
+
+#File one.py
+def fun():
+    print("fun() in one.py")
+
+print("top level in one.py")
+
+if __name__=="__main__":
+    print("one.py is being run directly")
+else:
+    print("one.py is being imported in other module")
+
+'''
+O/P:
+top level in one.py
+one.py is being run directly
+'''
+'''
+Explanation: Here fun() is decalred but not called. So, "top level in one.py is printed" and as
+nothing is imported, so, __name__ attribute has same name as of __main__which is "P2_one".
+So, "one.py is being run directly is printed".
+'''
+
+#File two.py
+
+import P2_one
+
+print("top level in two.py")
+P2_one.fun()
+if __name__=="__main__":
+    print("two.py is being run directly")
+else:
+    print("two.py is being imported in other module")
+
+'''
+O/P:
+top level in one.py
+one.py is being imported in other module
+top level in two.py
+fun() in one.py
+two.py is being run directly
+'''
+'''
+Explanation: Here P2_one file is imported. So, print statement of P2_one is executed which are:
+"top level in one.py" and "one.py is being imported in other module" and after that
+top level in two.py" is printed. And after that fun() is printed which is declared in P2_one.py
+ and "top level in two.py is printed" because, __name__ attribute has same name as of __main__
+ which is "P2_two".
+'''
+
+-->Built-in Functions:
+-----------------------
+Built-in Functions are the functions which are built into(already available) Python and can be
+accessed by end-users:
+
+Sorted() -  Returns a new sorted list from the items in iterable.           
+any() -     The any() function is the converse of the all() function.              
+bool() -    The bool function coverts the value to boolean.           
+chr() -     Returns the string representing a character whose Unicode code point is the integer.                   
+open() -    Opens file and returns a corresponding file object.                 
+abs() -     The abs() function returns the absolute value of an integer,floating point,or complex num.
+globals() - Returns a dictionary representing the current global symbol table.
+enumerate()-Returns an enumerate object with items and their index values.
+int() - Returns an integer object constructed from a number or string x
+len() - Returns the length of an object.
+all() - The all() function returns true if all the elements of the supplied iterable are True.
+bin() - Converts an integer number to a binary string prefixed with "0b"
+eval() - The arguments are a string and optional globals and locals. If provided, globals
+must be a dictionary. If provided, locals can be any mapping object.
+sum() - sum(iterable) sums the numeric values in an iterable such as a list, tuple, or set.
+reversed() - reversed(seq) is a reverse iterator on an object of the type that you can loop
+through and process. The list and tuple are supported with this function.
+
+-->Important Built-in Functions:
+--------------------------------
+enumerate():
+-Return an enumerate object. The iterable must be a sequence, an iterator, or some other object
+which supports iteration.
