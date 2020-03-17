@@ -1,0 +1,74 @@
+--->Procedure Oriented Programming VS Object Oriented Programming:
+------------------------------------------------------------------
+Procedure Oriented Programming                                      Object Oriented Programming:
+-------------------------------                                     ----------------------------
+-> In POP, program is divided into small parts called functions     ->In OOP, program is divided into parts called object.
+-> POP follows top-down approach                                    ->OOP follows bottom up approach.
+-> In POP, data can move freely from function to function in        ->In OOP, objects can move and communicate with each other through member functions
+system
+-> Examples: C                                                      -> Examples: Python, C++ 
+
+-> Python supports both Programming paradigm, Procedure Oriented approach as well as Object Oriented approach.
+-> Python is an Object-Oriented language, because of this creating and using classes and objects become easy.
+
+--->Object Oriented Concepts:
+-----------------------------
+-> Data becomes active.
+-> Code is reusable, thus less code may have to be written.
+-> Ability to simulate real world events much more effictively.
+-> Programmer is able to produce faster, more accurate, and better written applications.
+
+--->How is Python OOP is different than other OOPs?
+----------------------------------------------------
+-> You can't write a single piece of your code in Java without using class, but you can do so in python, even many projects don't use it.
+-> Python is an interpreted language,i.e., it execute code line-by-line, if your program has some error, that error will be shown when your line
+of code will execute, which is not the case with java or C++.
+
+--->Class and Objects:
+------------------------
+-> Class is a blueprint used to create objects having same property or attribute as its class.
+-> An Object is an instance of a class which contains variables and methods.
+
+--->Relation between Classes and Objects:
+------------------------------------------
+-> A class is a template for objects. It contains the code for all the object's methods.
+-> A class describes the abstract characteristics of a real-life thing.
+-> An instance is an object of a class created at run-time.
+-> There can be multiple instances of a class.
+
+--->Creating a class:
+---------------------
+syntax:
+-------
+class_name(object):
+    statement(s)
+
+#creating a class:
+class number():
+    pass
+
+#creating instance of class:
+x=number()
+print(x)
+
+#O/P:
+#<__main__.number object at 0x01730610>
+
+#NOTE: There is hidden rule among all OO programmers that whenever we are defining a class, the name of that class will start with a capital letter.
+
+--->Definition of a Method:
+---------------------------
+Example:
+---------
+class Edureka():
+    def Hello(self):
+        print("Happy Learning")
+
+ob=Edureka()
+ob.Hello()
+#O/P:
+#Happy Learning
+
+-> Here, "self" is the keyword wihich points to the class itself. ob is the object of a class. Instead of self.Hello(), we write ob.Hello()
+-> function "Hello" is defined within a class. The first parameter in the definition of a method has to be a reference "self" to the instance of the
+class. 
