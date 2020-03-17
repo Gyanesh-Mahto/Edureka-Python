@@ -68,4 +68,11 @@ new_loc_2.set_location("Patna")
 new_loc_2.print_1()             #This object belongs to location: Patna
 '''
 NOTE: Here self is mandatory. self should always be the first parameter.
+
+What does "self" implies?
+--------------------------
+-->Here we have created Edureka() class and so many objects of Edureka class has been created like new_loc_1, etc.. When any function is executed from 
+the objects. For example, we executed hello() function. Then this hello() does not belong to the object but it belongs to the class. So, this function 
+needs to know that out of all the objects which have been created from Edureka() class, for which object do that function needs to run. That will be 
+identified with self parameter.
 '''
