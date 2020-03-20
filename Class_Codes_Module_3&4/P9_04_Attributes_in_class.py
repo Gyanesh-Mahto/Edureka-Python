@@ -65,3 +65,18 @@ print(new_loc_2.__dict__)
 #{'location': 'Patna'}
 print(new_loc_1.__dir__)    #It will return the class name of object prvided
 #<built-in method __dir__ of Edureka object at 0x0175F6F0>
+print(new_loc_1.__doc__)    #This will give the documentation string. So, if any documentation is done for class, that documentation will be available there.
+#None
+print(new_loc_1.__module__)     #module name in which class is defined.
+#__main__
+print(Edureka.__name__)     #__name__ attribute gives the name of the class
+#Edureka
+'''
+Attributes defined by user:
+----------------------------
+class Foo(object):
+    def math(self):
+        pass
+
+-Attributes are created inside the Class definition. We can dynamically create new attributes for existing instances of the class.
+'''
