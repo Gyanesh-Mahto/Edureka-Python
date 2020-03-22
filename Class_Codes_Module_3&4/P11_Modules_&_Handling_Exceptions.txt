@@ -1,0 +1,34 @@
+#Topics:
+'''
+-> Standard Libraries
+-> Import Statement
+-> dir Function
+-> Reload Function
+-> Important Modules in Python
+-> sys module
+-> OS module
+-> Math module
+-> Date Time module
+-> Random module
+-> Json module
+-> Regular Expression
+-> Packages
+-> Exception Handling
+-> User Defined Exceptions
+'''
+
+#Standard Libraries:
+'''
+Standard Library is a collection of tools that come with python. The standard library includes
+the following:
+- Built in Functions
+- Modules
+- Packages
+'''
+#Moudles:
+'''
+Modules:
+- A modules allows you to logically organize the code.
+- Python Moudules are nothing but python files with .py extension
+- A module is a file contaning Python definitions and statements.
+'''

@@ -212,6 +212,9 @@ Eating....
 Barking....
 Weeping....
 '''
+'''
+Here Puppy class will inherit properties of not only Dog but Animal class as well.
+'''
 ###############################################"*****Overriding*****"#############################################################
 #Overriding:
 '''
@@ -235,6 +238,34 @@ Derived class fun function
 
 Derived class overrides the method or function written in Base class.
 '''
+'''
+Method Overriding:
+'''
+#Example: Multilevel Inheritance:
+class Animal:
+    def eat(self):
+        print("Eating....")
+
+class Dog(Animal):
+    def bark(Self):
+        print("Barking....")
+
+class Puppy(Dog):
+    def weep(self):
+        print("Weeping....")
+    def eat(self):
+        print("Eating...Tommy")
+
+tommy=Puppy()
+tommy.eat()
+tommy.bark()
+tommy.weep()
+'''
+O/P:
+Eating...Tommy  #(Here, eat function has been overrided from base(Animal class)). This is known as
+Barking....     #Method Overriding
+Weeping....
+'''
 ###############################################"*****Polymorphism*****"#############################################################
 #Polymorphism:
 #-------------#
@@ -245,8 +276,6 @@ subclasses.
 '''
 #Example:
 class Animal:
-    def __init__(self, name):
-        self.name=name
     def talk(self):
         pass
 
@@ -259,6 +288,6 @@ class Dog(Animal):
         print("bark")
 
 c=Cat()
-c.talk()
+c.talk()    #Meow
 d=Dog()
-d.talk()
+d.talk()    #bark
