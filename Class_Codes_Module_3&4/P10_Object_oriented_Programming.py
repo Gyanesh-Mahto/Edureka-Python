@@ -73,7 +73,7 @@ Inheritance:
 -->Types of Inheritance:
 #-------------------------#
 ######################################
-Single Inheritance: Derived Class is inheriting properties from 1 Base class
+Single Inheritance: Derived Class is inheriting properties from only 1 Base class
 -------------------
 A<------Base Class
 |
@@ -81,7 +81,7 @@ A<------Base Class
 |
 B<------Derived Class
 #######################################
-Multiple Inheritance: Derived Class is inherting properties from 2 or more Base classes
+Multiple Inheritance: Derived Class is inherting properties from 2 or more Base classes.
 ----------------------
 A           B<----Base Class
 |           |
@@ -136,7 +136,7 @@ Base class fun
 ###Multiple Inheritance:
 #-----------------------#
 '''
-Multiple Inheritance: Derived Class is inherting properties from 2 or more than 2 Base classes
+Multiple Inheritance: Derived Class is inherting properties from 2 or more than 2 Base classes.
 ----------------------
 A<Base 1    B<----Base2 Class
 |           |
