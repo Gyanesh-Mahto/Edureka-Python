@@ -103,10 +103,11 @@ os module:
 operating system commands.
 '''
 import os
+
 print(os.getcwd())
 
-print(os.chdir("~/Desktop/Edureka"))
+print(os.chdir("/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4"))    #None
 
-print(os.mkdir("test"))
+print(os.mkdir("/home/mga/Desktop/Edureka/Module_3_&_4/Demo_folder")) #Creates Demo_folder directory in given path
 
-print(os.rmdir("~/Desktop/Edureka/test"))
+print(os.rmdir("/home/mga/Desktop/Edureka/Module_3_&_4/Demo_folder"))   #Deletes directory from a given path
