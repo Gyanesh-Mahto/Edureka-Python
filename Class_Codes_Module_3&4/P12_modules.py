@@ -104,10 +104,22 @@ operating system commands.
 '''
 import os
 
-print(os.getcwd())
+import os
 
-print(os.chdir("/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4"))    #None
+print(os.name)  #posix
+
+print(os.environ)   #Environment
+
+print(os.getppid())     #507: pep id
+
+print(os.getcwd())  #Get Current Working Directory
+
+print(os.chdir("/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4"))    #Change current Working Directory
 
 print(os.mkdir("/home/mga/Desktop/Edureka/Module_3_&_4/Demo_folder")) #Creates Demo_folder directory in given path
 
 print(os.rmdir("/home/mga/Desktop/Edureka/Module_3_&_4/Demo_folder"))   #Deletes directory from a given path
+
+'''
+chdir, mkdir, rmdir are some of the most important commands of OS module.
+'''
