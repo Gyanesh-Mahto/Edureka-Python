@@ -123,3 +123,91 @@ print(os.rmdir("/home/mga/Desktop/Edureka/Module_3_&_4/Demo_folder"))   #Deletes
 '''
 chdir, mkdir, rmdir are some of the most important commands of OS module.
 '''
+#os.path module:
+print(os.path.join('/home/mga/Desktop','/home/mga/Downloads'))
+# Takes one or more paths and joins them by using the current OS's path separator
+#O/P: /home/mga/Downloads
+print(os.path.abspath('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4'))
+#Takes a relative pathname and returns the corresponding absolute pathname
+#O/P: /home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4
+
+print(os.path.normpath('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4'))
+#Converts path names from nonstandard format to standard format
+#O/P: /home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4
+
+print(os.path.split('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4/P10_object_oriented_Programming.py'))
+#Takes a pathname and returns it in two parts: the directory part and the filename
+#('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4', 'P10_object_oriented_Programming.py')
+
+print(os.path.exists('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4'))
+#Takes a pathname and returns true if it exists
+#True
+
+print(os.path.isdir('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4'))
+#Takes a pathname and returns true if it points to a directory
+#O/P: True
+
+print(os.path.isdir('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4/P10_object_oriented_Programming.py'))
+#O/P: False since pathname is pointing to a file.
+
+print(list(os.walk('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4')))
+#O/P:
+#[('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4', ['__pycache__'], 
+# ['P9_06_Class_Variable_Instance_Variable.py', 'P9_07_Constructor_and_Destructor.py', 
+# 'P2_one.py', 'P11_Modules_&_Handling_Exceptions.txt', 'P9_02_class.py', 'P4_0_lambda_functions.py', 
+# 'P1_Functions.py', 'P7_Keyword_Arguments.py', 'P9_04_Attributes_in_class.py', 
+# 'Functions_OOPs.txt', 'P9_05_Public_Protected_Private_Attributes.py', 
+# 'P10_Object_oriented_Programming.py', 'P9_01_OOPs_vs_POP.txt', 'P2_concept_of_main.txt', 
+# 'P12_modules.py', 'P8_Variable_length_arguments.py', 'P4_1_Map_Filter_Reduce.py', 
+# 'P3_inbuilt_functions.txt', 'P3_enumerate.py', 'P6_Memory_Address.py', 
+# 'P5_Scope_of_a_variable.py', 'P2_two.py', 'P9_03_Methods_within_class.py']), 
+# ('/home/mga/Desktop/Edureka/Module_3_&_4/Class_Codes_Module_3&4/__pycache__', [], 
+# ['P2_one.cpython-37.pyc'])]
+'''
+os.walk() will generate tuple of path, folders, files present in given path and will keep on
+traversing the subfolders
+'''
+
+##Math-Theoretic Functions:
+'''
+This module is always available. It provides access to the mathematical functions
+'''
+import math
+print(math.ceil(10.098))    #11
+#Returns the ceiling of x as a integer
+
+print(math.copysign(10,-1)) #-10.0
+#Returns x with the sign of y. On a platform that supports signed zeros, copysign(1.0,-0.0)
+#returns -1.0
+
+print(math.fabs(-19.7))     #19.7
+#Returns positive value of entered negative value
+
+#math - power and logarithmic function
+print(math.exp(5))  #148.4131591025766
+#Returns e**x
+
+print(math.expm1(2))    #6.38905609893065
+#Returns e**x-1
+
+print(math.log(10, 10))   #1.0
+#With one argument, return the natural logarithm of x(to base 10)
+
+#math - Trigonometric Functions
+print(math.acos(0.5))   #1.0471975511965979
+#Return the arc cosine (measured in radians) of x.
+
+print(math.asin(0.5))   #0.5235987755982989
+#Return the arc sine (measured in radians) of x.
+
+print(math.atan(0.5))   #0.4636476090008061
+#Return the arc tangent (measured in radians) of x.
+
+print(math.cos(0.5))    #0.8775825618903728
+#Return the cosine of x (measured in radians).
+
+print(math.degrees(0.5))    #28.64788975654116
+#Convert angle x from radians to degrees.
+
+print(math.radians(0.5))    #0.008726646259971648
+#Convert angle x from degrees to radians.
