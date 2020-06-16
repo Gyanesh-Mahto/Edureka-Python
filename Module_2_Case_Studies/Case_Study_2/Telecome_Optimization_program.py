@@ -87,8 +87,11 @@ else:
     print("Your Reference ID should be 12 digit. Please enter 12 digit Reference ID")
 
 '''
-I/P: Please enter your reference ID: qwert12345@#
+I/P:
+----
+Please enter your reference ID: qwert12345@#
 O/P:
+----
 Reference Id is encrypted as follows:
 b'gAAAAABea1MHZ5qIuQydO6IyAfLWXCaEHA2QrBTPiCZnIFUHstzJmYntNIxqoOA5-UNEpXqPKW8TsLyMZoao7aRKoF-JXHGFvQ=='
 Do you want to decrypt data: Y
