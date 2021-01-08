@@ -5,14 +5,19 @@ of single or double quotes. Python does not support a character type, these are 
 Python does not defferentiate between single and double quotes.
 '''
 
-str1='A'
-str2="AbrakaDabra"
+str1 = 'A'
+str2 = "AbraKaDabra"
+str3 = '''Hello
+world'''
 print(str1)
 print(str2)
+print(str3)
 
-#O/P:
+#O/P: 
 #A
-#AbrakaDabra
+#AbraKaDabra
+#Hello
+#world
 
 '''
 Strings are immutable in nature
